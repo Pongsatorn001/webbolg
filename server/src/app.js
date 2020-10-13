@@ -19,7 +19,7 @@ app.get('/hello/:person', function(req, res){
 
 // get user by id
 app.get('/user/:userId', function (req, res) {
-    res.send('ดูข้อมูลผู้ใช้งาน' + req.params.person)
+    res.send('ดูข้อมูลผู้ใช้งาน' + req.params.userId)
 })
 
 // get all user
@@ -42,7 +42,7 @@ app.delete('/user/:userId', function(req, res){
 })
 
 
-let port = 8080
+let port = 8081
 
 app.listen(port, function(){
     console.log('server runing on ' + port)
